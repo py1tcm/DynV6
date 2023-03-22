@@ -14,11 +14,9 @@ cd dynv6
 
 **Files configuration**
 
-If you are not running on "pi" user, you need to modify these files:
-
 * dynv6.service
 
-On dynv6.service modify username on <code>WorkingDirectory</code>, <code>ExecStart</code> and <code>User</code> fields to your username
+Modify username on <code>WorkingDirectory</code>, <code>ExecStart</code> and <code>User</code> fields from "pi" to your username:
 
 ~~~bash
 [Unit] 
@@ -39,11 +37,11 @@ WantedBy=multi-user.target
 
 * dynv6.command
 
-On dynv6.command modify directory path <code>/home/pi/dynv6/dynv6.sh</code> to your username
+Modify <code>your-authentication-token</code> to your token id provided by DynV6
 
-<code>your-authentication-token</code> to your token id provided by DynV6
+username on directory path <code>/home/pi/dynv6/dynv6.sh</code> from "pi" to your username
 
-<code>your-host.dynv6.net</code> to your host provided by DynV6
+<code>your-host.dynv6.net</code> to your host registered on DynV6
 
 ~~~bash
 #!/bin/sh
