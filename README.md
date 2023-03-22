@@ -16,6 +16,8 @@ cd dynv6
 
 If you are not running on "pi" user, you need to modify these files:
 
+* dynv6.service
+
 On dynv6.service modify username on <code>WorkingDirectory</code>, <code>ExecStart</code> and <code>User</code> fields to your username
 
 ~~~bash
@@ -35,6 +37,8 @@ WantedBy=multi-user.target
 
 ~~~
 
+* dynv6.command
+
 On dynv6.command modify directory path <code>/home/pi/dynv6/dynv6.sh</code> to your username
 
 <code>your-authentication-token</code> to your token id provided by DynV6
@@ -44,7 +48,23 @@ On dynv6.command modify directory path <code>/home/pi/dynv6/dynv6.sh</code> to y
 ~~~bash
 #!/bin/sh
 
-token=<your-authentication-token> /home/pi/dynv6/dynv6.sh <your-host.dynv6.net>
+token=your-authentication-token /home/pi/dynv6/dynv6.sh your-host.dynv6.net
+
+~~~
+
+* dynv6.timer
+
+
+~~~bash
+[Unit]
+Description=Dynv6 update timer
+
+[Timer]
+OnCalendar=minutely
+Persistent=true
+
+[Install]
+WantedBy=timers.target
 
 ~~~
 
