@@ -35,7 +35,7 @@ WantedBy=multi-user.target
 
 ~~~
 
-On dynv6.command modify directory path from /home/pi/dynv6/dynv6.sh to /home/<your username>/dynv6/dynv6.sh
+On dynv6.command modify directory path from /home/pi/dynv6/dynv6.sh to /home/<your-username>/dynv6/dynv6.sh
 
 <your-authentication-token> to your token id 
 
@@ -59,7 +59,7 @@ cp dynv6_dual.sh dynv6.sh
 
 ~~~
 
-### Setting files to executable
+### Setting files to be executable
 
 ~~~bash
 chmod +x dynv6.command
@@ -67,7 +67,7 @@ chmod +x dynv6.sh
 
 ~~~
 
-### Automatic start and update regularly
+### Automatic start and update host
 
 Copy dynv6.service and dynv6.timer to systemd directory
 
