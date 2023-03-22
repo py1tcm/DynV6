@@ -1,0 +1,13 @@
+[Unit] 
+Description=Dynv6 update service 
+After=network.target 
+
+[Service] 
+Type=oneshot 
+WorkingDirectory=/home/pi/dynv6 
+ExecStart=/home/pi/dynv6/dynv6.command 
+SyslogIdentifier=Dynv6 
+User=pi 
+
+[Install]
+WantedBy=multi-user.target
