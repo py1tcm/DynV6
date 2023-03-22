@@ -35,7 +35,7 @@ WantedBy=multi-user.target
 
 ~~~
 
-* dynv6.command
+* **dynv6.command**
 
 Modify <code>your-authentication-token</code> to your token id provided by DynV6
 
@@ -50,8 +50,13 @@ token=your-authentication-token /home/pi/dynv6/dynv6.sh your-host.dynv6.net
 
 ~~~
 
-* dynv6.timer
+* **dynv6.timer**
 
+Systemd timer files act as crontab events, control services and execute them at defined time configurated on your correspondent files
+
+in that case, timer files has configured to execute service <code>minutely</code> and this can modified by your necessities:
+
+<code>OnCalendar</code> can be modified to <code>hourly</code>, <code>daily</code>, <code>weekly</code>, <code>monthly</code>, <code>yearly</code>
 
 ~~~bash
 [Unit]
