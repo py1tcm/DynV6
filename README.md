@@ -71,6 +71,8 @@ WantedBy=timers.target
 
 ~~~
 
+* **dynv6.sh**
+
 On dynv6 directory has three dynv6.sh files, dynv6_dual.sh is for dual stack (ipv4 and ipv6) networks and update ip on both networks, dynv6_ipv4.sh update ipv4 netowrk only and dynv6_ipv6.sh update ipv6 network only
 
 After define your network type, copy seleted file to dynv6.sh
