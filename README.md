@@ -12,7 +12,7 @@ cd dynv6
 
 ~~~
 
-**Files configuration**
+### Files configuration
 
 * **dynv6.service**
 
