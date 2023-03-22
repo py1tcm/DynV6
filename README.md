@@ -54,7 +54,7 @@ token=your-authentication-token /home/pi/dynv6/dynv6.sh your-host.dynv6.net
 
 Systemd timer files act as crontab events, control services and execute them at defined time configurated on your correspondent files
 
-in that case, timer files has configured to execute service <code>minutely</code> and this can modified by your necessities:
+in that case, timer file has configured to execute service <code>minutely</code> and this can modified by your necessities:
 
 <code>OnCalendar</code> can be modified to <code>hourly</code>, <code>daily</code>, <code>weekly</code>, <code>monthly</code>, <code>yearly</code>
 
@@ -73,7 +73,7 @@ WantedBy=timers.target
 
 * **dynv6.sh**
 
-On dynv6 directory has three dynv6.sh files, dynv6_dual.sh is for dual stack (ipv4 and ipv6) networks and update ip on both networks, dynv6_ipv4.sh update ipv4 netowrk only and dynv6_ipv6.sh update ipv6 network only
+On dynv6 directory has three dynv6.sh files, <code>dynv6_dual.sh</code> is for dual stack (ipv4 and ipv6) networks and update ip on both networks, <code>dynv6_ipv4.sh</code> update ipv4 netowrk only and <code>dynv6_ipv6.sh</code> update ipv6 network only
 
 After define your network type, copy seleted file to dynv6.sh
 
