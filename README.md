@@ -14,7 +14,7 @@ cd dynv6
 
 **Files configuration**
 
-* dynv6.service
+* **dynv6.service**
 
 Modify username on <code>WorkingDirectory</code>, <code>ExecStart</code> and <code>User</code> fields from "pi" to your username:
 
