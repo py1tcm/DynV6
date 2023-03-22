@@ -12,7 +12,7 @@ cd dynv6
 
 ~~~
 
-**Initial configs**
+**Files configuration**
 
 If you are not running on "pi" user, you need to modify these files:
 
@@ -35,11 +35,11 @@ WantedBy=multi-user.target
 
 ~~~
 
-On dynv6.command modify directory path from /home/pi/dynv6/dynv6.sh to /home/<your-username>/dynv6/dynv6.sh
+On dynv6.command modify directory path <code>/home/pi/dynv6/dynv6.sh</code> to your username
 
-<your-authentication-token> to your token id 
+<code>your-authentication-token</code> to your token id provided by DynV6
 
-<your-host.dynv6.net> to your host provided by DynV6
+<code>your-host.dynv6.net</code> to your host provided by DynV6
 
 ~~~bash
 #!/bin/sh
@@ -48,11 +48,11 @@ token=<your-authentication-token> /home/pi/dynv6/dynv6.sh <your-host.dynv6.net>
 
 ~~~
 
-On dynv6 directory has 3 dynv6.sh files, dynv6_dual.sh is for dual stack (ipv4 and ipv6) networks and update ip on both networks, dynv6_ipv4.sh update ipv4 netowrk only and dynv6_ipv6.sh update ipv6 network only
+On dynv6 directory has three dynv6.sh files, dynv6_dual.sh is for dual stack (ipv4 and ipv6) networks and update ip on both networks, dynv6_ipv4.sh update ipv4 netowrk only and dynv6_ipv6.sh update ipv6 network only
 
 After define your network type, copy seleted file to dynv6.sh
 
-**Example**
+**Example:**
 
 ~~~bash
 cp dynv6_dual.sh dynv6.sh
