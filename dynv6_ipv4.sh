@@ -16,7 +16,6 @@ fi
 if [ -n "$device" ]; then
   device="dev $device"
 fi
-#address=$(ip -6 addr list scope global $device | grep -v " fd" | sed -n 's/.*inet6 \([0-9a-f:]\+\).*/\1/p' | head -n 1)
 
 if [ -e /usr/bin/curl ]; then
   bin="curl -fsS"
@@ -27,21 +26,10 @@ else
   exit 1
 fi
 
-#if [ -z "$address" ]; then
-#  echo "no IPv6 address found"
-#  exit 1
-#fi
-
 # address with netmask
 current=$address/$netmask
 
-#if [ "$old" = "$current" ]; then
-#  echo "IPv6 address unchanged"
-#  exit
-#fi
-
-# send addresses to dynv6
-#$bin "http://dynv6.com/api/update?hostname=$hostname&ipv6=$current&token=$token"
+# send address to dynv6
 $bin "http://ipv4.dynv6.com/api/update?hostname=$hostname&ipv4=auto&token=$token"
 
 # save current address
