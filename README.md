@@ -37,11 +37,11 @@ WantedBy=multi-user.target
 
 * **dynv6.command**
 
-Modify <code>your-authentication-token</code> to your token id provided by DynV6
+Modify <code>your-authentication-token</code> to your token id provided by DynV6.
 
-Username on directory path <code>/home/pi/dynv6/dynv6.sh</code> from "pi" to your username
+Username on directory path <code>/home/pi/dynv6/dynv6.sh</code> from "pi" to your username.
 
-<code>your-host.dynv6.net</code> to your host registered on DynV6
+<code>your-host.dynv6.net</code> to your host registered on DynV6.
 
 ~~~bash
 #!/bin/sh
@@ -52,11 +52,11 @@ token=your-authentication-token /home/pi/dynv6/dynv6.sh your-host.dynv6.net
 
 * **dynv6.timer**
 
-Systemd timer files act as crontab events, control services and execute them at defined time
+Systemd timer files act as crontab events, control services and execute them at defined time.
 
 In that case, timer file has configured to execute service <code>minutely</code> and this can modified by your necessities:
 
-<code>OnCalendar</code> can be modified to <code>hourly</code>, <code>daily</code>, <code>weekly</code>, <code>monthly</code>, <code>yearly</code>
+<code>OnCalendar</code> can be modified to <code>hourly</code>, <code>daily</code>, <code>weekly</code>, <code>monthly</code>, <code>yearly</code>.
 
 ~~~bash
 [Unit]
@@ -73,9 +73,9 @@ WantedBy=timers.target
 
 * **dynv6.sh**
 
-On dynv6 directory has three dynv6.sh files, <code>dynv6_dual.sh</code> is for dual stack (ipv4 and ipv6) networks and update ip on both networks, <code>dynv6_ipv4.sh</code> update ipv4 netowrk only and <code>dynv6_ipv6.sh</code> update ipv6 network only
+On dynv6 directory has three dynv6.sh files, <code>dynv6_dual.sh</code> is for dual stack (ipv4 and ipv6) networks and update ip on both networks, <code>dynv6_ipv4.sh</code> update ipv4 netowrk only and <code>dynv6_ipv6.sh</code> update ipv6 network only.
 
-After define your network type, copy seleted file to dynv6.sh
+After define your network type, copy seleted file to dynv6.sh.
 
 **Example:**
 
