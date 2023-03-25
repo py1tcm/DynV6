@@ -115,7 +115,7 @@ sudo systemctl start dynv6.timer
 ~~~
 
 
-**View service output log**
+**View service output status**
 
 ~~~bash
 sudo journalctl -u dynv6.service -f -n
