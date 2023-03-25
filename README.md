@@ -14,6 +14,8 @@ cd dynv6
 
 ## Files configuration
 
+Use your preferred editor, i use [nano](https://www.nano-editor.org/).
+
 * **dynv6.service**
 
 Modify username on <code>WorkingDirectory</code>, <code>ExecStart</code> and <code>User</code> fields from _pi_ to your username:
