@@ -2,7 +2,7 @@
 
 Based on dynv6 update script from Julian Kornberger (https://gist.github.com/corny/7a07f5ac901844bd20c9)
 
-### Instalation Instructions
+## Instalation Instructions
 
 **Clonning directory**
 
@@ -12,7 +12,7 @@ cd dynv6
 
 ~~~
 
-### Files configuration
+## Files configuration
 
 * **dynv6.service**
 
@@ -92,9 +92,9 @@ chmod +x dynv6.sh
 
 ~~~
 
-### Automatic start and update host
+## Automatic start and update host
 
-<p style='color:red'>Confirm that your user has sudo permission</p>
+### Confirm that your user has sudo permission
 
 **Copy dynv6.service and dynv6.timer to systemd directory**
 
