@@ -84,7 +84,7 @@ cp dynv6_dual.sh dynv6.sh
 
 ~~~
 
-### Setting files to be executable
+**Setting files to be executable**
 
 ~~~bash
 chmod +x dynv6.command
@@ -94,9 +94,9 @@ chmod +x dynv6.sh
 
 ### Automatic start and update host
 
-![Red text](Confirm that your user has sudo permission)
+<p style='color:red'>Confirm that your user has sudo permission</p>
 
-Copy dynv6.service and dynv6.timer to systemd directory
+**Copy dynv6.service and dynv6.timer to systemd directory**
 
 ~~~bash
 sudo cp dynv6.service /etc/systemd/system
@@ -104,7 +104,7 @@ sudo cp dynv6.timer /etc/systemd/system
 
 ~~~
 
-Enable dynv6 update run at startup and start service
+**Enable dynv6 update run at startup and start service**
 
 ~~~bash
 sudo systemctl enable dynv6.service
@@ -115,7 +115,7 @@ sudo systemctl start dynv6.timer
 ~~~
 
 
-### View service output log
+**View service output log**
 
 ~~~bash
 sudo journalctl -u dynv6.service -f -n
