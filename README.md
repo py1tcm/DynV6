@@ -16,7 +16,7 @@ cd dynv6
 
 * **dynv6.service**
 
-Modify username on <code>WorkingDirectory</code>, <code>ExecStart</code> and <code>User</code> fields from "pi" to your username:
+Modify username on <code>WorkingDirectory</code>, <code>ExecStart</code> and <code>User</code> fields from "_pi_" to your username:
 
 ~~~bash
 [Unit] 
@@ -39,7 +39,7 @@ WantedBy=multi-user.target
 
 Modify <code>your-authentication-token</code> to your token id provided by DynV6.
 
-Username on directory path <code>/home/pi/dynv6/dynv6.sh</code> from "pi" to your username.
+Username on directory path <code>/home/pi/dynv6/dynv6.sh</code> from "_pi_" to your username.
 
 <code>your-host.dynv6.net</code> to your host registered on DynV6.
 
