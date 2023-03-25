@@ -94,7 +94,7 @@ chmod +x dynv6.sh
 
 ## Automatic start and update host
 ```diff
--Confirm that your user has sudo permission
+***-Confirm that your user has sudo permission***
 ```
 **Copy dynv6.service and dynv6.timer to systemd directory**
 
